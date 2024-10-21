@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lutheran736.github.io/posts/guide_to_install_latex_in_archlinux/</loc>
+    <loc>https://lutheran736.github.io/articles/guide_to_install_latex_in_archlinux/</loc>
     <lastmod>2024-10-20T17:00:23-04:00</lastmod>
   </url><url>
     <loc>https://lutheran736.github.io/tags/linux/</loc>
@@ -11,13 +11,13 @@
     <loc>https://lutheran736.github.io/</loc>
     <lastmod>2024-10-20T17:00:23-04:00</lastmod>
   </url><url>
-    <loc>https://lutheran736.github.io/posts/</loc>
-    <lastmod>2024-10-20T17:00:23-04:00</lastmod>
-  </url><url>
     <loc>https://lutheran736.github.io/tags/</loc>
     <lastmod>2024-10-20T17:00:23-04:00</lastmod>
   </url><url>
-    <loc>https://lutheran736.github.io/archives/</loc>
+    <loc>https://lutheran736.github.io/tags/tech/</loc>
+    <lastmod>2024-10-20T17:00:23-04:00</lastmod>
+  </url><url>
+    <loc>https://lutheran736.github.io/books/</loc>
   </url><url>
     <loc>https://lutheran736.github.io/categories/</loc>
   </url>
