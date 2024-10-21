@@ -1,24 +1,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 	<title>lutheran736 blog</title>
-	<link>https://lutheran736.github.io/</link>
+	<link>http://localhost:1313/</link>
 	<description>Recent content on lutheran736 blog</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Sun, 20 Oct 2024 17:00:23 -0400</lastBuildDate>
+	<lastBuildDate>Sun, 20 Oct 2024 20:01:47 -0400</lastBuildDate>
     
-        <atom:link href="https://lutheran736.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
 		<title>Guide to install latex in archlinux</title>
-		<link>https://lutheran736.github.io/articles/guide_to_install_latex_in_archlinux/</link>
+		<link>http://localhost:1313/guides/guide_to_install_latex_in_archlinux/</link>
 		<pubDate>Sun, 20 Oct 2024 17:00:23 -0400</pubDate>
 		
-		<guid>https://lutheran736.github.io/articles/guide_to_install_latex_in_archlinux/</guid>
-		<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacman -S --needed --noconfirm texlive-science texlive-publishers texlive-pstricks &lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;texlive-pictures texlive-latexextra texlive-humanities texlive-games  texlive-formatsextra &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;texlive-fontsextra texlive-bibtexextra texlive-bin texlive-core texlive-langspanish
+		<guid>http://localhost:1313/guides/guide_to_install_latex_in_archlinux/</guid>
+		<description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacman -S --needed --noconfirm texlive-science texlive-publishers texlive-pstricks texlive-pictures &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;texlive-latexextra texlive-humanities texlive-games  texlive-formatsextra texlive-fontsextra &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;texlive-bibtexextra texlive-bin texlive-core texlive-langspanish
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 	</item>
 	
