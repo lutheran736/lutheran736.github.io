@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paru | lutheran736 blog</title>
+	<link rel="canonical" href="https://lutheran736.github.io/">
+	<link rel='alternate' type='application/rss+xml' title="lutheran736 blog RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.svg">
+	<meta name="description" content="Paru
+Rust/charge configuration
+sudo pacman -S rustup --needed --noconfirm
+mkdir -p ~/.cargo/
+nvim ~/.cargo/config
+--------------------------------------------------------------
+## User-level configuration file of the rust cargo compiler:
+#--&gt; ~/.cargo/config
+
+## wiki: https://wiki.archlinux.org/title/Rust#Optimizing_for_native_CPU_platform
+#Optimize for native CPU platform.
+[target.x86_64-unknown-linux-gnu]
+rustflags = [&#34;-C&#34;, &#34;target-cpu=native&#34;]
+
+[source.crates-io]
+registry = &#34;https://github.com/rust-lang/crates.io-index&#34;
+
+#Replace it with your preferred mirror source.
+replace-with = &#39;ustc&#39;
+#replace-with = &#39;tuna&#39;
+#replace-with = &#39;sjtu&#39;
+#replace-with = &#39;rustcc&#39;
+
+#University of science and technology of China.
+[source.ustc]
+registry = &#34;git://mirrors.ustc.edu.cn/crates.io-index&#34;
+
+#Tsinghua University.
+#[source.tuna]
+#registry = &#34;https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git&#34;
+
+#Shanghai Jiaotong University.
+#[source.sjtu]
+#registry = &#34;https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index&#34;
+
+#Rustcc community.
+#[source.rustcc]
+#registry = &#34;git://crates.rustcc.cn/crates.io-index&#34;
+
+### Autor: https://t.me/dakataca ###
+rustup default stable
+Paru(AUR helper)
+cd /tmp/
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd
+">
+	<meta name="keywords" content="linux, tech">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_Paru">Paru</h1></header>
+<article>
+
+<h1 id="paru">Paru</h1>
+<h2 id="rustcharge-configuration">Rust/charge configuration</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo pacman -S rustup --needed --noconfirm
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p ~/.cargo/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nvim ~/.cargo/config
+</span></span><span style="display:flex;"><span>--------------------------------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## User-level configuration file of the rust cargo compiler:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#--&gt; ~/.cargo/config</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## wiki: https://wiki.archlinux.org/title/Rust#Optimizing_for_native_CPU_platform</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Optimize for native CPU platform.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>target.x86_64-unknown-linux-gnu<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>rustflags <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;-C&#34;</span>, <span style="color:#e6db74">&#34;target-cpu=native&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>source.crates-io<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>registry <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/rust-lang/crates.io-index&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Replace it with your preferred mirror source.</span>
+</span></span><span style="display:flex;"><span>replace-with <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ustc&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#replace-with = &#39;tuna&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#replace-with = &#39;sjtu&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#replace-with = &#39;rustcc&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#University of science and technology of China.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>source.ustc<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>registry <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;git://mirrors.ustc.edu.cn/crates.io-index&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Tsinghua University.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[source.tuna]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#registry = &#34;https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Shanghai Jiaotong University.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[source.sjtu]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#registry = &#34;https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Rustcc community.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[source.rustcc]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#registry = &#34;git://crates.rustcc.cn/crates.io-index&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Autor: https://t.me/dakataca ###</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>rustup default stable
+</span></span></code></pre></div><h4 id="paruaur-helper">Paru(AUR helper)</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd /tmp/
+</span></span><span style="display:flex;"><span>git clone https://aur.archlinux.org/paru.git
+</span></span><span style="display:flex;"><span>cd paru
+</span></span><span style="display:flex;"><span>makepkg -si
+</span></span><span style="display:flex;"><span>cd
+</span></span></code></pre></div>
+
+<div id="nextprev">
+<a href="/articles/guide_to_install_latex_in_archlinux/"><div id="prevart">Previous:<br>Guide to install latex in archlinux</div></a>
+</div>
+<div style="clear:both" class=taglist>Related<br><a id="tag_linux" href="https://lutheran736.github.io/tags/linux">Linux</a> &middot; <a id="tag_tech" href="https://lutheran736.github.io/tags/tech">Tech</a></div>
+</article>
+</main>
+
+<footer>
+	<a href="https://lutheran736.github.io/">https://lutheran736.github.io/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>
